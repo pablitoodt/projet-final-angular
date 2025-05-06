@@ -1,0 +1,36 @@
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.loader-text {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding-inline: 10%;
+}
+
+.card {
+  width: 200px;
+}
+
+.card > h2 {
+  font-size: 0.9em;
+}
+
+.card > p {
+  font-size: 0.8em;
+}
+
+.card-image {
+  width: 100%;
+
+}

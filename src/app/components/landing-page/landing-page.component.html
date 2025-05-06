@@ -1,0 +1,9 @@
+<h1 class="page-title">Bienvenue sur la page d'accueil</h1>
+
+@if(isAuthenticated()) {
+  <p class="text">Vous pouvez accéder aux pages suivantes</p>
+  <p class="text"><a routerLink="/rick-morty" class="main-menu-links">Rick et Morty</a></p>
+} @else {
+  <p class="text">Pour continuer veuillez vous connecter où vous inscrire</p>
+  <p class="text"><a routerLink="/auth/login" class="main-menu-links">Connexion</a></p>
+}

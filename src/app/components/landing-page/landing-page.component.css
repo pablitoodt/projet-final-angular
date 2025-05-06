@@ -1,0 +1,20 @@
+.main-menu-links{
+  text-decoration:unset;
+  color:#EF7B45;
+  font-weight:600;
+  font-size:0.9rem;
+  letter-spacing:.025rem;
+
+  &:hover{
+    transition: 0.5s;
+    color:#D84727;
+  }
+}
+
+.text {
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+}

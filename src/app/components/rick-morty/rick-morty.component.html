@@ -1,0 +1,15 @@
+<p class="page-title">Rick et Morty</p>
+<div *ngIf="characters$ | async as chars; else loader" class="container">
+  <article *ngFor="let c of chars" class="card">
+    <img [src]="c.image" [alt]="c.name" class="card-image">
+    <h2>{{ c.name }}</h2>
+    <p>{{ c.species }} — {{ c.status }}</p>
+  </article>
+</div>
+
+<ng-template #loader>
+  <p class="loader-text">Chargement des personnages…</p>
+</ng-template>
+
+
+

@@ -1,0 +1,20 @@
+<nav class="main-nav">
+  <p class="main-title">Projet final angular</p>
+  <menu class="main-menu">
+    <li class="main-menu-items">
+      <a routerLink="" class="main-menu-links">Accueil</a>
+    </li>
+    @if(isAuthenticated()) {
+      <li class="main-menu-items">
+        <a routerLink="/rick-morty" class="main-menu-links">Rick et Morty</a>
+      </li>
+      <li class="main-menu-items">
+        <a (click)="logout()" class="main-menu-links">Déconnexion</a>
+      </li>
+    } @else {
+      <li class="main-menu-items">
+        <a routerLink="/auth/login" class="main-menu-links">Connexion</a>
+      </li>
+    }
+  </menu>
+</nav>
